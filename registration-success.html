@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Registration Successful | YUKTI 2.0</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+
+            margin: 0;
+
+            min-height: 100vh;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 20px;
+
+            background:
+                radial-gradient(
+                    circle at 50% 20%,
+                    rgba(0, 140, 255, 0.15),
+                    transparent 40%
+                ),
+                #050816;
+
+            color: #ffffff;
+
+            font-family: inherit;
+
+        }
+
+
+        .success-container {
+
+            width: 100%;
+
+            max-width: 520px;
+
+            text-align: center;
+
+            padding: 40px 25px;
+
+            border:
+                1px solid
+                rgba(255,255,255,0.08);
+
+            border-radius: 20px;
+
+            background:
+                rgba(255,255,255,0.035);
+
+        }
+
+
+        .success-icon {
+
+            width: 75px;
+
+            height: 75px;
+
+            margin: 0 auto 25px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background:
+                rgba(71,209,140,0.1);
+
+            border:
+                1px solid
+                rgba(71,209,140,0.3);
+
+            color: #47d18c;
+
+            font-size: 35px;
+
+        }
+
+
+        .success-label {
+
+            color: #38b6ff;
+
+            font-size: 9px;
+
+            font-weight: 700;
+
+            letter-spacing: 3px;
+
+        }
+
+
+        h1 {
+
+            margin:
+                12px 0 10px;
+
+            font-size:
+                clamp(30px, 7vw, 46px);
+
+        }
+
+
+        .description {
+
+            margin: 0 auto 28px;
+
+            max-width: 400px;
+
+            color: #8996ae;
+
+            font-size: 13px;
+
+            line-height: 1.7;
+
+        }
+
+
+        .registration-id-box {
+
+            padding: 20px;
+
+            margin-bottom: 25px;
+
+            border-radius: 12px;
+
+            background:
+                rgba(56,182,255,0.06);
+
+            border:
+                1px solid
+                rgba(56,182,255,0.15);
+
+        }
+
+
+        .registration-id-box span {
+
+            display: block;
+
+            margin-bottom: 8px;
+
+            color: #68758c;
+
+            font-size: 9px;
+
+            letter-spacing: 2px;
+
+        }
+
+
+        #registrationId {
+
+            color: #38b6ff;
+
+            font-size: 22px;
+
+            font-weight: 800;
+
+            letter-spacing: 1px;
+
+            word-break: break-all;
+
+        }
+
+
+        .event-info {
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 10px;
+
+            margin-bottom: 25px;
+
+        }
+
+
+        .info-card {
+
+            padding: 14px;
+
+            border-radius: 10px;
+
+            background:
+                rgba(255,255,255,0.03);
+
+        }
+
+
+        .info-card span {
+
+            display: block;
+
+            margin-bottom: 5px;
+
+            color: #68758c;
+
+            font-size: 8px;
+
+            letter-spacing: 1px;
+
+        }
+
+
+        .info-card strong {
+
+            font-size: 11px;
+
+        }
+
+
+        .home-button {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            width: 100%;
+
+            padding: 15px;
+
+            border-radius: 9px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #168cff,
+                    #38c8ff
+                );
+
+            color: #ffffff;
+
+            text-decoration: none;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+        }
+
+
+        @media (max-width: 480px) {
+
+            .success-container {
+
+                padding: 32px 18px;
+
+            }
+
+            .event-info {
+
+                grid-template-columns: 1fr;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <main class="success-container">
+
+
+        <div class="success-icon">
+            ✓
+        </div>
+
+
+        <span class="success-label">
+            YUKTI 2.0
+        </span>
+
+
+        <h1>
+            Registration Successful
+        </h1>
+
+
+        <p class="description">
+
+            Your team has been successfully registered
+            for the YUKTI 2.0 Ideathon.
+
+        </p>
+
+
+        <div class="registration-id-box">
+
+            <span>
+                REGISTRATION ID
+            </span>
+
+            <strong id="registrationId">
+                Loading...
+            </strong>
+
+        </div>
+
+
+        <div class="event-info">
+
+            <div class="info-card">
+
+                <span>
+                    DATE
+                </span>
+
+                <strong>
+                    22 August 2026
+                </strong>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <span>
+                    VENUE
+                </span>
+
+                <strong>
+                    Seminar Hall
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <a
+            href="index.html"
+            class="home-button"
+        >
+
+            Back to YUKTI 2.0
+
+        </a>
+
+    </main>
+
+
+    <script>
+
+        /*
+         * The registration ID will eventually be
+         * passed here after successful submission.
+         */
+
+        const registrationId =
+            localStorage.getItem(
+                "yuktiRegistrationId"
+            );
+
+
+        const idElement =
+            document.getElementById(
+                "registrationId"
+            );
+
+
+        if (registrationId) {
+
+            idElement.textContent =
+                registrationId;
+
+        } else {
+
+            idElement.textContent =
+                "YUKTI-2.0";
+
+        }
+
+    </script>
+
+</body>
+
+</html>

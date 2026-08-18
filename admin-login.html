@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Login | YUKTI 2.0</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <style>
+
+        /* ================= PAGE ================= */
+
+        .admin-login-page {
+
+            min-height: 100vh;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 20px;
+
+            background:
+                radial-gradient(
+                    circle at 50% 20%,
+                    rgba(0, 140, 255, 0.15),
+                    transparent 40%
+                ),
+                #050816;
+
+        }
+
+
+        /* ================= CARD ================= */
+
+        .login-card {
+
+            width: 100%;
+
+            max-width: 420px;
+
+            padding: 40px 30px;
+
+            border:
+                1px solid
+                rgba(255,255,255,0.08);
+
+            border-radius: 20px;
+
+            background:
+                rgba(255,255,255,0.035);
+
+            box-shadow:
+                0 25px 80px
+                rgba(0,0,0,0.35);
+
+        }
+
+
+        /* ================= BRAND ================= */
+
+        .login-brand {
+
+            text-align: center;
+
+            margin-bottom: 35px;
+
+        }
+
+
+        .login-brand img {
+
+            width: 70px;
+
+            height: 70px;
+
+            object-fit: contain;
+
+            border-radius: 50%;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .login-brand h1 {
+
+            margin: 0;
+
+            font-size: 32px;
+
+            letter-spacing: 1px;
+
+        }
+
+
+        .login-brand h1 span {
+
+            color: #38b6ff;
+
+        }
+
+
+        .login-brand p {
+
+            margin-top: 8px;
+
+            color: #78859d;
+
+            font-size: 11px;
+
+            letter-spacing: 1px;
+
+        }
+
+
+        /* ================= FORM ================= */
+
+        .login-form {
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 18px;
+
+        }
+
+
+        .login-group {
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 8px;
+
+        }
+
+
+        .login-group label {
+
+            color: #c5cede;
+
+            font-size: 12px;
+
+            font-weight: 600;
+
+        }
+
+
+        .login-group input {
+
+            width: 100%;
+
+            box-sizing: border-box;
+
+            padding: 14px 15px;
+
+            border:
+                1px solid
+                rgba(255,255,255,0.1);
+
+            border-radius: 9px;
+
+            outline: none;
+
+            background:
+                rgba(255,255,255,0.04);
+
+            color: #ffffff;
+
+            font-family: inherit;
+
+            font-size: 13px;
+
+        }
+
+
+        .login-group input:focus {
+
+            border-color: #2baeff;
+
+            box-shadow:
+                0 0 0 3px
+                rgba(40,170,255,0.08);
+
+        }
+
+
+        .login-group input::placeholder {
+
+            color: #59667d;
+
+        }
+
+
+        /* ================= BUTTON ================= */
+
+        .login-button {
+
+            width: 100%;
+
+            margin-top: 5px;
+
+            padding: 15px;
+
+            border: none;
+
+            border-radius: 9px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #168cff,
+                    #38c8ff
+                );
+
+            color: #ffffff;
+
+            font-family: inherit;
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+
+        }
+
+
+        .login-button:hover {
+
+            transform:
+                translateY(-2px);
+
+        }
+
+
+        .login-button:disabled {
+
+            opacity: 0.6;
+
+            cursor: not-allowed;
+
+            transform: none;
+
+        }
+
+
+        /* ================= ERROR ================= */
+
+        .login-message {
+
+            display: none;
+
+            padding: 12px;
+
+            margin-top: 5px;
+
+            border-radius: 8px;
+
+            background:
+                rgba(255,70,70,0.08);
+
+            border:
+                1px solid
+                rgba(255,70,70,0.15);
+
+            color: #ff8c8c;
+
+            font-size: 11px;
+
+            line-height: 1.5;
+
+        }
+
+
+        .login-message.show {
+
+            display: block;
+
+        }
+
+
+        /* ================= BACK ================= */
+
+        .back-home {
+
+            display: block;
+
+            margin-top: 22px;
+
+            text-align: center;
+
+            color: #69758b;
+
+            font-size: 11px;
+
+            text-decoration: none;
+
+        }
+
+
+        .back-home:hover {
+
+            color: #38b6ff;
+
+        }
+
+
+        /* ================= MOBILE ================= */
+
+        @media (max-width: 480px) {
+
+            .login-card {
+
+                padding: 32px 20px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body class="admin-login-page">
+
+
+    <div class="login-card">
+
+
+        <!-- BRAND -->
+
+        <div class="login-brand">
+
+            <img
+                src="images/college-logo.jpeg"
+                alt="Samarth College Logo"
+            >
+
+            <h1>
+
+                YUKTI
+                <span>2.0</span>
+
+            </h1>
+
+            <p>
+                E-CELL SGOI · ADMIN PORTAL
+            </p>
+
+        </div>
+
+
+        <!-- LOGIN FORM -->
+
+        <form
+            id="adminLoginForm"
+            class="login-form"
+        >
+
+
+            <div class="login-group">
+
+                <label for="adminEmail">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="adminEmail"
+                    placeholder="Enter admin email"
+                    autocomplete="email"
+                    required
+                >
+
+            </div>
+
+
+            <div class="login-group">
+
+                <label for="adminPassword">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="adminPassword"
+                    placeholder="Enter password"
+                    autocomplete="current-password"
+                    required
+                >
+
+            </div>
+
+
+            <div
+                id="loginMessage"
+                class="login-message"
+            ></div>
+
+
+            <button
+                type="submit"
+                id="loginButton"
+                class="login-button"
+            >
+
+                Sign In
+
+            </button>
+
+        </form>
+
+
+        <a
+            href="index.html"
+            class="back-home"
+        >
+
+            ← Back to YUKTI 2.0
+
+        </a>
+
+    </div>
+
+
+
+    <!-- ================= FIREBASE LOGIN ================= -->
+
+    <script type="module">
+
+        import { auth }
+        from "./js/firebase-config.js";
+
+        import {
+            signInWithEmailAndPassword
+        }
+        from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
+
+
+        const form =
+            document.getElementById(
+                "adminLoginForm"
+            );
+
+
+        const emailInput =
+            document.getElementById(
+                "adminEmail"
+            );
+
+
+        const passwordInput =
+            document.getElementById(
+                "adminPassword"
+            );
+
+
+        const loginButton =
+            document.getElementById(
+                "loginButton"
+            );
+
+
+        const message =
+            document.getElementById(
+                "loginMessage"
+            );
+
+
+        form.addEventListener(
+            "submit",
+            async function (event) {
+
+                event.preventDefault();
+
+
+                message.classList.remove(
+                    "show"
+                );
+
+
+                const email =
+                    emailInput.value.trim();
+
+
+                const password =
+                    passwordInput.value;
+
+
+                loginButton.disabled = true;
+
+                loginButton.textContent =
+                    "Signing in...";
+
+
+                try {
+
+                    await signInWithEmailAndPassword(
+                        auth,
+                        email,
+                        password
+                    );
+
+
+                    window.location.href =
+                        "admin.html";
+
+
+                } catch (error) {
+
+                    console.error(
+                        "Login error:",
+                        error
+                    );
+
+
+                    message.textContent =
+                        "Invalid email or password. Please check your credentials and try again.";
+
+                    message.classList.add(
+                        "show"
+                    );
+
+
+                    loginButton.disabled = false;
+
+                    loginButton.textContent =
+                        "Sign In";
+
+                }
+
+            }
+        );
+
+    </script>
+
+</body>
+
+</html>

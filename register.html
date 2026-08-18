@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | YUKTI 2.0</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body class="registration-page">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="brand">
+
+                <img
+                    src="images/college-logo.jpeg"
+                    alt="Samarth College Logo"
+                >
+
+                <div class="brand-name">
+                    <span>YUKTI</span>
+                    <small>2.0</small>
+                </div>
+
+            </a>
+
+            <a href="index.html" class="secondary-btn back-button">
+                ← Back
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="registration-container">
+
+
+        <!-- ================= HEADER ================= -->
+
+        <div class="registration-header">
+
+            <span>YUKTI 2.0 — IDEATHON</span>
+
+            <h1>
+                Register Your
+                <em>Team.</em>
+            </h1>
+
+            <p>
+                Take the first step towards turning
+                your idea into impact.
+            </p>
+
+        </div>
+
+
+        <!-- ================= REGISTRATION FORM ================= -->
+
+        <form
+            id="registrationForm"
+            class="registration-form"
+        >
+
+
+            <!-- ================= TEAM INFORMATION ================= -->
+
+            <section class="form-section">
+
+                <div class="form-section-title">
+
+                    <span>01</span>
+
+                    <div>
+
+                        <small>TEAM INFORMATION</small>
+
+                        <h2>
+                            Tell us about your team
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+
+                    <!-- TEAM NAME -->
+
+                    <div class="form-group full-width">
+
+                        <label for="teamName">
+                            Team Name <b>*</b>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="teamName"
+                            name="teamName"
+                            placeholder="Enter your team name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- TEAM SIZE -->
+
+                    <div class="form-group">
+
+                        <label for="teamSize">
+                            Team Size <b>*</b>
+                        </label>
+
+                        <select
+                            id="teamSize"
+                            name="teamSize"
+                            required
+                        >
+
+                            <option value="">
+                                Select team size
+                            </option>
+
+                            <option value="1">
+                                1 Member
+                            </option>
+
+                            <option value="2">
+                                2 Members
+                            </option>
+
+                            <option value="3">
+                                3 Members
+                            </option>
+
+                            <option value="4">
+                                4 Members
+                            </option>
+
+                        </select>
+
+                        <small class="field-help">
+                            Minimum 1 and maximum 4 members.
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= TEAM LEADER ================= -->
+
+            <section class="form-section">
+
+                <div class="form-section-title">
+
+                    <span>02</span>
+
+                    <div>
+
+                        <small>TEAM LEADER</small>
+
+                        <h2>
+                            Primary contact
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+
+                    <!-- LEADER NAME -->
+
+                    <div class="form-group">
+
+                        <label for="leaderName">
+                            Full Name <b>*</b>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="leaderName"
+                            name="leaderName"
+                            placeholder="Enter full name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- LEADER PHONE -->
+
+                    <div class="form-group">
+
+                        <label for="leaderPhone">
+                            Mobile Number <b>*</b>
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="leaderPhone"
+                            name="leaderPhone"
+                            placeholder="10-digit mobile number"
+                            maxlength="10"
+                            inputmode="numeric"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- LEADER EMAIL -->
+
+                    <div class="form-group full-width">
+
+                        <label for="leaderEmail">
+                            Email Address <b>*</b>
+                        </label>
+
+                        <input
+                            type="email"
+                            id="leaderEmail"
+                            name="leaderEmail"
+                            placeholder="Enter your email address"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- LEADER COLLEGE -->
+
+                    <div class="form-group">
+
+                        <label for="leaderCollege">
+                            College Name <b>*</b>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="leaderCollege"
+                            name="leaderCollege"
+                            placeholder="Enter college name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- LEADER YEAR -->
+
+                    <div class="form-group">
+
+                        <label for="leaderYear">
+                            Year <b>*</b>
+                        </label>
+
+                        <select
+                            id="leaderYear"
+                            name="leaderYear"
+                            required
+                        >
+
+                            <option value="">
+                                Select year
+                            </option>
+
+                            <option value="1st Year">
+                                1st Year
+                            </option>
+
+                            <option value="2nd Year">
+                                2nd Year
+                            </option>
+
+                            <option value="3rd Year">
+                                3rd Year
+                            </option>
+
+                            <option value="4th Year">
+                                4th Year
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= TEAM MEMBERS ================= -->
+
+            <section class="form-section">
+
+                <div class="form-section-title">
+
+                    <span>03</span>
+
+                    <div>
+
+                        <small>TEAM MEMBERS</small>
+
+                        <h2>
+                            Add your teammates
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p class="section-note">
+
+                    The team leader is Member 1.
+                    Add the remaining members according
+                    to your selected team size.
+
+                </p>
+
+
+
+                <!-- ================= MEMBER 2 ================= -->
+
+                <div
+                    class="member-box"
+                    id="member2"
+                    hidden
+                >
+
+                    <div class="member-title">
+                        MEMBER 02
+                    </div>
+
+
+                    <div class="form-grid">
+
+
+                        <!-- NAME -->
+
+                        <div class="form-group">
+
+                            <label for="member2Name">
+                                Full Name <b>*</b>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="member2Name"
+                                name="member2Name"
+                                placeholder="Member name"
+                            >
+
+                        </div>
+
+
+                        <!-- PHONE -->
+
+                        <div class="form-group">
+
+                            <label for="member2Phone">
+                                Mobile Number <b>*</b>
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="member2Phone"
+                                name="member2Phone"
+                                placeholder="10-digit mobile number"
+                                maxlength="10"
+                                inputmode="numeric"
+                            >
+
+                        </div>
+
+
+                        <!-- EMAIL -->
+
+                        <div class="form-group full-width">
+
+                            <label for="member2Email">
+                                Email <b>*</b>
+                            </label>
+
+                            <input
+                                type="email"
+                                id="member2Email"
+                                name="member2Email"
+                                placeholder="Email address"
+                            >
+
+                        </div>
+
+
+                        <!-- COLLEGE -->
+
+                        <div class="form-group">
+
+                            <label for="member2College">
+                                College Name <b>*</b>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="member2College"
+                                name="member2College"
+                                placeholder="College name"
+                            >
+
+                        </div>
+
+
+                        <!-- YEAR -->
+
+                        <div class="form-group">
+
+                            <label for="member2Year">
+                                Year <b>*</b>
+                            </label>
+
+                            <select
+                                id="member2Year"
+                                name="member2Year"
+                            >
+
+                                <option value="">
+                                    Select year
+                                </option>
+
+                                <option value="1st Year">
+                                    1st Year
+                                </option>
+
+                                <option value="2nd Year">
+                                    2nd Year
+                                </option>
+
+                                <option value="3rd Year">
+                                    3rd Year
+                                </option>
+
+                                <option value="4th Year">
+                                    4th Year
+                                </option>
+
+                                <option value="Other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= MEMBER 3 ================= -->
+
+                <div
+                    class="member-box"
+                    id="member3"
+                    hidden
+                >
+
+                    <div class="member-title">
+                        MEMBER 03
+                    </div>
+
+
+                    <div class="form-grid">
+
+
+                        <!-- NAME -->
+
+                        <div class="form-group">
+
+                            <label for="member3Name">
+                                Full Name <b>*</b>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="member3Name"
+                                name="member3Name"
+                                placeholder="Member name"
+                            >
+
+                        </div>
+
+
+                        <!-- PHONE -->
+
+                        <div class="form-group">
+
+                            <label for="member3Phone">
+                                Mobile Number <b>*</b>
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="member3Phone"
+                                name="member3Phone"
+                                placeholder="10-digit mobile number"
+                                maxlength="10"
+                                inputmode="numeric"
+                            >
+
+                        </div>
+
+
+                        <!-- EMAIL -->
+
+                        <div class="form-group full-width">
+
+                            <label for="member3Email">
+                                Email <b>*</b>
+                            </label>
+
+                            <input
+                                type="email"
+                                id="member3Email"
+                                name="member3Email"
+                                placeholder="Email address"
+                            >
+
+                        </div>
+
+
+                        <!-- COLLEGE -->
+
+                        <div class="form-group">
+
+                            <label for="member3College">
+                                College Name <b>*</b>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="member3College"
+                                name="member3College"
+                                placeholder="College name"
+                            >
+
+                        </div>
+
+
+                        <!-- YEAR -->
+
+                        <div class="form-group">
+
+                            <label for="member3Year">
+                                Year <b>*</b>
+                            </label>
+
+                            <select
+                                id="member3Year"
+                                name="member3Year"
+                            >
+
+                                <option value="">
+                                    Select year
+                                </option>
+
+                                <option value="1st Year">
+                                    1st Year
+                                </option>
+
+                                <option value="2nd Year">
+                                    2nd Year
+                                </option>
+
+                                <option value="3rd Year">
+                                    3rd Year
+                                </option>
+
+                                <option value="4th Year">
+                                    4th Year
+                                </option>
+
+                                <option value="Other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= MEMBER 4 ================= -->
+
+                <div
+                    class="member-box"
+                    id="member4"
+                    hidden
+                >
+
+                    <div class="member-title">
+                        MEMBER 04
+                    </div>
+
+
+                    <div class="form-grid">
+
+
+                        <!-- NAME -->
+
+                        <div class="form-group">
+
+                            <label for="member4Name">
+                                Full Name <b>*</b>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="member4Name"
+                                name="member4Name"
+                                placeholder="Member name"
+                            >
+
+                        </div>
+
+
+                        <!-- PHONE -->
+
+                        <div class="form-group">
+
+                            <label for="member4Phone">
+                                Mobile Number <b>*</b>
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="member4Phone"
+                                name="member4Phone"
+                                placeholder="10-digit mobile number"
+                                maxlength="10"
+                                inputmode="numeric"
+                            >
+
+                        </div>
+
+
+                        <!-- EMAIL -->
+
+                        <div class="form-group full-width">
+
+                            <label for="member4Email">
+                                Email <b>*</b>
+                            </label>
+
+                            <input
+                                type="email"
+                                id="member4Email"
+                                name="member4Email"
+                                placeholder="Email address"
+                            >
+
+                        </div>
+
+
+                        <!-- COLLEGE -->
+
+                        <div class="form-group">
+
+                            <label for="member4College">
+                                College Name <b>*</b>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="member4College"
+                                name="member4College"
+                                placeholder="College name"
+                            >
+
+                        </div>
+
+
+                        <!-- YEAR -->
+
+                        <div class="form-group">
+
+                            <label for="member4Year">
+                                Year <b>*</b>
+                            </label>
+
+                            <select
+                                id="member4Year"
+                                name="member4Year"
+                            >
+
+                                <option value="">
+                                    Select year
+                                </option>
+
+                                <option value="1st Year">
+                                    1st Year
+                                </option>
+
+                                <option value="2nd Year">
+                                    2nd Year
+                                </option>
+
+                                <option value="3rd Year">
+                                    3rd Year
+                                </option>
+
+                                <option value="4th Year">
+                                    4th Year
+                                </option>
+
+                                <option value="Other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= PAYMENT ================= -->
+
+            <section class="form-section payment-section">
+
+                <div class="form-section-title">
+
+                    <span>04</span>
+
+                    <div>
+
+                        <small>PAYMENT</small>
+
+                        <h2>
+                            Pay ₹100 Registration Fee
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="simple-payment">
+
+
+                    <div class="payment-method">
+
+                        <span class="payment-method-label">
+                            PAYMENT OPTION
+                        </span>
+
+                        <h3>
+                            UPI / QR Payment
+                        </h3>
+
+                        <p>
+                            Scan the QR code and pay exactly
+                            ₹100.
+                        </p>
+
+                    </div>
+
+
+                    <!-- QR CODE -->
+
+                    <div class="qr-payment">
+
+                        <img
+                            src="images/payment-qr.png"
+                            alt="YUKTI 2.0 ₹100 Payment QR Code"
+                            class="payment-qr"
+                        >
+
+                    </div>
+
+
+                    <!-- AMOUNT -->
+
+                    <div class="payment-price">
+
+                        <span>
+                            REGISTRATION FEE
+                        </span>
+
+                        <strong>
+                            ₹100
+                        </strong>
+
+                    </div>
+
+
+                    <!-- PAYMENT CONFIRMATION -->
+
+                    <button
+                        type="button"
+                        id="payButton"
+                        class="pay-button"
+                    >
+
+                        I Have Paid ₹100
+
+                        <span>
+                            →
+                        </span>
+
+                    </button>
+
+
+                    <p
+                        id="paymentStatus"
+                        class="payment-status"
+                    >
+                        Payment will be checked by the
+                        admin before registration is approved.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= FINAL SUBMIT ================= -->
+
+            <section class="form-section">
+
+                <div class="form-section-title">
+
+                    <span>05</span>
+
+                    <div>
+
+                        <small>FINAL STEP</small>
+
+                        <h2>
+                            Submit Registration
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p
+                    id="submitNotice"
+                    class="agreement-text"
+                >
+
+                    Complete the ₹100 payment first,
+                    then confirm that you have paid.
+                    Your registration will be sent to the
+                    admin for payment verification.
+
+                </p>
+
+
+                <div class="submit-section">
+
+                    <button
+                        type="submit"
+                        id="submitButton"
+                        class="submit-button"
+                        disabled
+                    >
+
+                        Submit Registration
+
+                        <span>
+                            →
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </section>
+
+
+        </form>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="registration-footer">
+
+        <p>
+            © 2026 E-Cell SGOI · YUKTI 2.0
+        </p>
+
+        <a href="index.html">
+            Back to YUKTI 2.0
+        </a>
+
+    </footer>
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script
+        type="module"
+        src="js/register.js">
+    </script>
+
+</body>
+
+</html>
